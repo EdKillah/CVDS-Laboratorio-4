@@ -4,17 +4,18 @@
 
 ### Clases de equivalencia
 
-    1. OriginalScore
+
+    ** OriginalScore
 		* parametros invalidos (-1,0), (-2,0), (0,-1), (0,-2), (0,0)
 		*puntaje entre 0 y 100  (0,1),(0,0),(1,2)
 		* puntaje menor que 0 (0,10), (0,11), (0,9)
 
-    2. BonusScore
+    ** BonusScore
 		* parametros invalidos (-1,0), (-2,0), (0,-1), (0,-2), (0,0)
 		* puntaje mayor que 0 (1,0), (5,9), (0,0)
 		* puntaje menor que 0 (5,10), (5,11), (0,0)
 
-    3. PowerScore
+    ** PowerScore
         * parametros invalidos (-1,0), (-2,0), (0,-1), (0,-2), (0,0)
 		* puntaje entre  0 y 500 (3,19), (3,20),(4,0), (0,0)
 		* puntaje menor que 0 (1,1), (0,1), (0,0)
