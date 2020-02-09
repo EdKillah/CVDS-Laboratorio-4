@@ -2,7 +2,7 @@ target
 .DS_Store
 /nbproject/
 .idea
-.project
-.classpath
 *.iml
-
+.classpath
+.project
+.settings
