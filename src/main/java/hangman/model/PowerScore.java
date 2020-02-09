@@ -21,17 +21,23 @@ public class PowerScore implements GameScore {
 	
 	
 	/**
-	*@param correctCount  , incorrectCount  
+	*@param correctCount 
+	*@param incorrectCount numero incorrecto de jugadas.  
 	*
 	*@pre recibir dos valores enteros ( correctCount  , incorrectCount ) 
-	*@pos retorna un valor entero que es la puntuacion generada
-	*@return score  	
-	*@throws no se usa el manejo de excepciones en este método.
+	*@pos retorna un valor entero que es la puntuacion generada.
+	*@return score  .
+	*@throws InvalidoException si algun parametro es negativo.
 	*/
-	
-	
-	public int calculateScore(int correctCount, int incorrectCount) {
-		return 0;
+	public int calculateScore(int correctCount, int incorrectCount) throws HangmanException {
+		if (correctCount < 0 || incorrectCount < 0) {throw new HangmanException(HangmanException.INVALIDO);}
+		int tot=0;
+		for(int i=0;i<correctCount;i++) {
+			tot+=Math.pow(5, i+1);
+		}
+		tot=Math.min(tot,500);
+		tot-=incorrectCount*8;
+		return Math.max(tot, 0);
 	}
 
 }
