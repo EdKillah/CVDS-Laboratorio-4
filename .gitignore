@@ -1,8 +1,8 @@
-/target/
-/.DS_Store/
+target/
+.DS_Store/
 /nbproject/
 *.iml/
-/.classpath/
-/.idea/
-.settings
-.project
+.classpath/
+.idea/
+.settings/
+.project/
