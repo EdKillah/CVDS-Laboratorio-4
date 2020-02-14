@@ -30,6 +30,7 @@ public class OriginalScore implements GameScore {
 	
 	public int calculateScore(int correctCount, int incorrectCount) throws HangmanException{
 		if (correctCount < 0 || incorrectCount < 0) {throw new HangmanException(HangmanException.INVALIDO);}
+		//System.out.println("Original Score: "+Math.max(0, 100-(10*incorrectCount)));
 		return Math.max(0, 100-(10*incorrectCount));
 	}
 

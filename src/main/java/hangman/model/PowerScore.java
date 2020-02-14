@@ -37,6 +37,7 @@ public class PowerScore implements GameScore {
 		}
 		tot=Math.min(tot,500);
 		tot-=incorrectCount*8;
+		//System.out.println("Puntaje powerScore: "+Math.max(tot, 0));
 		return Math.max(tot, 0);
 	}
 
