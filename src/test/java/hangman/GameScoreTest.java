@@ -1,6 +1,6 @@
 /***************************************************************
 * file: GameScoreTest.java
-* author:   Cesar Gonzalez
+* author:   Cesar Gonzalez 
 *           Eduard Jimenez
 * class: CS 245 - Programming Graphical User Interfaces
 *
